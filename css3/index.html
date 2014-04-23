@@ -9,7 +9,12 @@
 			}
 			@-webkit-keyframes simple {
 				0% { -webkit-transform: rotate(0deg); }
-				100% { -webkit-transform: rotate(360deg); }
+				50% { -webkit-transform: rotate(180deg); }
+				100% { -webkit-transform: rotate(90deg); }
+			}
+			@-webkit-keyframes simple1 {
+				from { top: 0; left: 0; }
+				to   { top: 100px; left: 100px; }
 			}
 			body{
 				margin: 0;
@@ -581,6 +586,12 @@
 										<br>&nbsp;&nbsp;-webkit-animation-timing-function: linear;
 									<br>}
 									<br>
+									<br>.animation-6{
+										<br>&nbsp;&nbsp;position: relative;
+										<br>&nbsp;&nbsp;-webkit-animation: simple1 1s steps(10) infinite alternate;
+									<br>}
+									<br>
+
 								</code>
 							</div>
 						</div>
